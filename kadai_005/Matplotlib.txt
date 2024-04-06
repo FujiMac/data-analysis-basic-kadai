@@ -10,10 +10,11 @@ axes[0,0].plot(y0)
 #2つ目：sin関数
 x1 = np.linspace(0, 10, 100)
 y1 = 2 + 2 * np.sin(2 * x1)
-axes[0,1].plot(x1, y1, linewidth=1.0)
 
-ax.set(xlim=(0, 10), xticks=np.arange(0, 10),
+axes[0,1].plot(x1, y1, linewidth=1.0)
+axes[0,1].set(xlim=(0, 10), xticks=np.arange(0, 10),
        ylim=(-1, 5), yticks=np.arange(-1, 6))
+
 
 # 3つ目：ヒストグラム
 

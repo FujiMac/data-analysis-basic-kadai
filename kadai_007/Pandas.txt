@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import japanize_matplotlib
+
+#カテゴリー別に集計し、棒グラフで表示
+df['カテゴリー'].value_counts().plot(kind='bar')
+plt.title("カテゴリー別出現頻度")
+plt.show()
+
+#商品番号ごとに、注文数の基本統計量を求める
+df.groupby('商品番号')['注文数'].agg(['sum','describe'])
+
